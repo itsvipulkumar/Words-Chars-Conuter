@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style.css">
+    <script src="https://kit.fontawesome.com/40ca53aeca.js" crossorigin="anonymous"></script>
+    <title>Word Counter</title>
+</head>
+
+<body>
+    <div class="wordcounter">
+        <div class="head">
+            <h1>Free Word Counter</h1>
+        </div>
+        <div class="wrap">
+
+            <div class="menu">
+                <button id="clear_btn" onclick="clear()">Clear</button>
+            </div>
+            <!-- <div class="sidebar">
+                <button onclick="clear()" id="clear">Clear</button>
+            </div> -->
+            <div class="textarea">
+                <textarea placeholder="type or paste your text here..." onkeyup="counter()" name="" id="words" cols="70"
+                    rows="11"></textarea>
+                <div class="data">
+                    <p>Words <span id="showWdata">0</span></p>
+                    <hr>
+                    <p>Characters <span id="showCdata">0</span></p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="./index.js"></script>
+</html>
